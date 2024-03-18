@@ -1,21 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class movement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
+    private float speed = 4f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
+    public AnimatorController[] animationarray;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Animator animator;
 
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        if (Input.GetButton("Horizontal"))
+        {
+            animator.runtimeAnimatorController = animationarray[1];
+        } else
+        {
+            animator.runtimeAnimatorController = animationarray[0];
+        }
+
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
