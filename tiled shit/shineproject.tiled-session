@@ -5,21 +5,21 @@
     },
     "activeFile": "tiled files/terrain.tsx",
     "expandedProjectPaths": [
-        "tiled files",
-        "."
+        ".",
+        "tiled files"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "tiled files/terrain.tsx": {
-            "scaleInDock": 1,
+            "scaleInDock": 2,
             "scaleInEditor": 3
         },
         "tiled files/untitled.tmx": {
-            "scale": 1.5,
+            "scale": 1,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 77.66666666666669,
-                "y": 33.33333333333337
+                "x": 419.5,
+                "y": 27
             }
         }
     },

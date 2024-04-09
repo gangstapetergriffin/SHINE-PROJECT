@@ -7,7 +7,7 @@ public class movement : MonoBehaviour
 {
     private float horizontal;
     private float speed = 4f;
-    private float jumpingPower = 16f;
+    private float jumpingPower = 16.5f;
     private bool isFacingRight = true;
     public AnimatorController[] animationarray;
 
@@ -19,10 +19,10 @@ public class movement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButton("Horizontal"))
+        if (Input.GetButton("Horizontal") && IsGrounded())
         {
             animator.runtimeAnimatorController = animationarray[1];
-        } else
+        } else if (IsGrounded())
         {
             animator.runtimeAnimatorController = animationarray[0];
         }
@@ -32,11 +32,6 @@ public class movement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
 
-        }
-
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
         Flip();

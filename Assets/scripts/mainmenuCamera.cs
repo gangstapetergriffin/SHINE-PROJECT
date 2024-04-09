@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class mainmenuCamera : MonoBehaviour
 {
+    private float yes;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(GetComponent<SpriteRenderer>().bounds.size.x);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        yes += 1 * Time.deltaTime;
+        transform.position = new Vector3(yes,0, -10);
     }
 }
