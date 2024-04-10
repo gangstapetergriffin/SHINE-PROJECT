@@ -9,6 +9,8 @@ TagManager:
   - DEATH
   - Damage
   - coin
+  - finish
+  - cherries
   layers:
   - Default
   - TransparentFX

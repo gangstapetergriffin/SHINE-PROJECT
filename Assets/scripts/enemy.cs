@@ -53,6 +53,11 @@ public class enemy : MonoBehaviour
             Destroy(gameObject);
             Instantiate(PRefab, gameObject.transform.position, Quaternion.identity);
         }
+        if (collision.gameObject.CompareTag("fireball"))
+        {
+            Destroy(gameObject);
+            Instantiate(PRefab, gameObject.transform.position, Quaternion.identity);
+        }
     }
 
 }
