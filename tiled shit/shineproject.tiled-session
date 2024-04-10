@@ -3,10 +3,10 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "tiled files/terrain.tsx",
+    "activeFile": "tiled files/untitled.tmx",
     "expandedProjectPaths": [
-        ".",
-        "tiled files"
+        "tiled files",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -15,11 +15,11 @@
             "scaleInEditor": 3
         },
         "tiled files/untitled.tmx": {
-            "scale": 1,
-            "selectedLayer": 0,
+            "scale": 3,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 419.5,
-                "y": 27
+                "x": 3174.5,
+                "y": 54
             }
         }
     },
@@ -34,8 +34,8 @@
     ],
     "project": "shineproject.tiled-project",
     "recentFiles": [
-        "tiled files/untitled.tmx",
-        "tiled files/terrain.tsx"
+        "tiled files/terrain.tsx",
+        "tiled files/untitled.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

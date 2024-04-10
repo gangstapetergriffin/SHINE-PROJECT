@@ -14,10 +14,6 @@ public class parallaxBG : MonoBehaviour
         //Getting the starting X position of sprite.
         _startingPos = transform.position.x;
         //Getting the length of the sprites.
-        if (_lengthOfSprite == null)
-        {
-            _lengthOfSprite = 23.04f;
-        }
     }
 
 

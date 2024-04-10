@@ -7,6 +7,8 @@ TagManager:
   - platform
   - Apple
   - DEATH
+  - Damage
+  - coin
   layers:
   - Default
   - TransparentFX
