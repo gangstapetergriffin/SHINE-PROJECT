@@ -53,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth--;
             powercherries = false;
+            playerScore--;
             gameObject.transform.localScale = new Vector2(4, 4);
         }
         if (collision.gameObject.CompareTag("coin"))
