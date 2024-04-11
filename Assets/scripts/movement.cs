@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class movement : MonoBehaviour
@@ -9,7 +8,7 @@ public class movement : MonoBehaviour
     private float speed = 4f;
     private float jumpingPower = 16.5f;
     private bool isFacingRight = true;
-    public AnimatorController[] animationarray;
+    public RuntimeAnimatorController[] animationarray;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
