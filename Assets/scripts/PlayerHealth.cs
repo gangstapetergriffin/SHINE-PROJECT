@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (Input.GetKeyDown (KeyCode.F)) 
             {
-                //Instantiate(prefab, gameObject.transform.position, Quaternion.identity); needs fixing
+                //Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
             }
         }
     }
